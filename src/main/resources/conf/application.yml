@@ -1,0 +1,12 @@
+
+server:
+  port: 80
+  schema: http
+  redirect-port: 443
+
+
+management:
+  port: 54002
+  health:
+    mail:
+      enabled: false

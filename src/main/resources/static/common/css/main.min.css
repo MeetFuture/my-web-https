@@ -1,0 +1,952 @@
+html, body {
+	min-width: 960px
+}
+
+.l-nav {
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	z-index: 1000
+}
+
+.l-nav ul {
+	width: 960px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	text-align: justify
+}
+
+.l-nav ul:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+}
+
+.l-nav ul li {
+	float: left;
+	margin: 18px 58px 0 0;
+	line-height: 16px
+}
+
+.l-nav ul li.e-lan {
+	margin-right: 0
+}
+
+.l-nav ul li a {
+	text-decoration: none;
+	font-size: 16px;
+	color: #c2c2c2;
+	font-weight: 100
+}
+
+.l-nav ul li a:hover {
+	color: #fff
+}
+
+.l-nav ul li .click {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 100;
+	color: #fff
+}
+
+.l-nav .e-homelogo {
+	margin: 14px 70px 0 40px;
+	width: 176px;
+	height: 25px;
+	background: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/homepage/sensetime-logo.png) 0 0 no-repeat;
+	background-size: 100%
+}
+
+.l-nav .e-lan {
+	background-color: #000;
+	font-size: 14px;
+	color: #c2c2c2;
+	border: 0;
+	outline: 0;
+	font-weight: 100;
+	line-height: 16px
+}
+
+.l-nav .e-lan a:nth-child(1) {
+	border-right: 1px solid #c2c2c2;
+	padding-right: 10px
+}
+
+.l-nav .e-lan a:nth-child(2) {
+	margin-left: 10px
+}
+
+.l-nav-tech {
+	height: 100px;
+	background-color: #e9e9e9
+}
+
+.l-nav-tech ul {
+	width: 700px;
+	height: 100px;
+	text-align: justify
+}
+
+.l-nav-tech ul:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+}
+
+.l-nav-tech ul li {
+	text-align: center;
+	margin: 0;
+	padding: 0 2px;
+	float: none;
+	display: inline-block;
+	cursor: pointer
+}
+
+.l-nav-tech li.active {
+	border-bottom: 4px solid #1e1e1e
+}
+
+.l-nav-tech img {
+	width: 43px;
+	height: 43px;
+	margin-top: 12px;
+	margin-bottom: 4px
+}
+
+.l-nav-tech p {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	color: #1e1e1e;
+	margin-top: -5px;
+	margin-bottom: 6px
+}
+
+#banner {
+	position: relative;
+	overflow: hidden
+}
+
+#banner ul {
+	position: absolute;
+	list-style-type: none;
+	filter: Alpha(Opacity = 80);
+	opacity: .8;
+	z-index: 1002;
+	left: 50%;
+	margin-left: -31px;
+	padding: 0;
+	bottom: 3px;
+	right: 5px
+}
+
+#banner ul li.on {
+	background: #006d91;
+	color: #f02233
+}
+
+#banner ul li {
+	float: left;
+	display: block;
+	color: #FFF;
+	background: #fff;
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 0
+}
+
+#banner_list {
+	width: 100%;
+	height: 100%
+}
+
+#banner_list a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: default
+}
+
+#banner_list a video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url() no-repeat;
+	background-size: cover
+}
+
+.banner_list_item1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 30px;
+	color: #fff;
+	width: 600px;
+	text-align: center;
+	margin-left: -300px;
+	margin-top: -140px;
+	font-weight: 100
+}
+
+.banner_list_item1btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	color: #fff;
+	width: 288px;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	margin-left: -144px;
+	margin-top: 0;
+	font-weight: 100;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	cursor: pointer
+}
+
+.banner_list_item2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 40px;
+	color: #fff;
+	width: 300px;
+	text-align: center;
+	margin-left: -150px;
+	margin-top: -140px;
+	font-weight: 100
+}
+
+.banner_list_item2list {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -50px;
+	width: 600px;
+	height: 100px
+}
+
+.banner_list_item2list i {
+	display: block;
+	width: 120px;
+	height: 100px;
+	float: left;
+	cursor: pointer
+}
+
+.banner_list_item2list i img {
+	width: 50px;
+	height: 50px;
+	margin: 0 0 0 35px
+}
+
+.banner_list_item2list i p {
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	font-style: normal;
+	font-weight: 100;
+	line-height: 5px
+}
+
+.banner_list_item3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 40px;
+	color: #fff;
+	width: 500px;
+	text-align: center;
+	margin-left: -250px;
+	margin-top: -150px;
+	font-weight: 100
+}
+
+.banner_list_item3list {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -254px;
+	margin-top: 0;
+	width: 532px;
+	height: 100px
+}
+
+.banner_list_item3list i {
+	display: block;
+	width: 128px;
+	height: 100px;
+	float: left;
+	cursor: pointer
+}
+
+.banner_list_item3list i img {
+	width: 45px;
+	height: 60px;
+	margin: 0 0 0 42px
+}
+
+.banner_list_item3list i p {
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	font-style: normal;
+	font-weight: 100;
+	line-height: 5px
+}
+
+.hide {
+	display: none
+}
+
+.cover-image {
+	height: 100%;
+	background: no-repeat center center;
+	background-size: cover
+}
+
+.cover-image-1 {
+	background-image: url("http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/homepage/bannervideo/banner1.jpg")
+}
+
+.cover-image-2 {
+	background-image: url("http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/homepage/bannervideo/banner2.jpg")
+}
+
+.cover-image-3 {
+	background-image: url("http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/homepage/bannervideo/banner3.jpg")
+}
+
+.l-footer {
+	width: 100%;
+	height: 60px;
+	background-color: #d8d8d8; /* position:absolute */
+}
+
+.l-footer-team-privacy {
+	width: 100%;
+	height: 60px;
+	background-color: #d8d8d8;
+	position: absolute;
+	bottom: 0;
+	left: 0
+}
+
+.l-footer ul li a, .l-footer-team-privacy ul li a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #006d91;
+	font-weight: 100
+}
+
+.l-footer ul, .l-footer-team-privacy ul {
+	width: 500px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: justify;
+	padding-right: 35px
+}
+
+.l-footer ul:after, .l-footer-team-privacy ul:after {
+	content: '';
+	width: 100%;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0
+}
+
+.l-footer ul li, .l-footer-team-privacy ul li {
+	text-align: center;
+	margin: 10px 0 0;
+	float: none;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 14px
+}
+
+.l-footer ul li:nth-child(2n+2), .l-footer-team-privacy ul li:nth-child(2n+2) {
+	height: 14px;
+	background-color: #006d91;
+	width: 1px
+}
+
+.l-footer p, .l-footer-team-privacy p {
+	position: relative;
+	top: -8px;
+	left: 50%;
+	margin: 0 0 0 -274px;
+	font-size: 14px;
+	color: #6b6b6b;
+	font-weight: 100;
+	width: 630px
+}
+
+.l-banner {
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-width: 960px;
+	display: table
+}
+
+.l-banner-jobs {
+	background-image: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/jobs/banner-jobs.jpg)
+}
+
+.l-banner h1 {
+	font-size: 36px;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 40px
+}
+
+.l-banner p {
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 24px;
+	color: #fff;
+	width: 750px;
+	margin: auto;
+	text-align: justify
+}
+
+.l-banner-about {
+	background-color: #a38383;
+	background-image: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/about-us/banner-about-us.jpg)
+}
+
+.l-banner-terms {
+	background-color: #a38383;
+	background-image: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/legal/banner-legal&terms.jpg)
+}
+
+.l-banner-privacy {
+	background-color: #a38383;
+	background-image: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/legal/banner-legal&terms.jpg)
+}
+
+.l-banner-team {
+	background-color: #a38383;
+	background-image: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/team/banner-team.jpg)
+}
+
+.l-banner-product {
+	background-color: #a38383;
+	background-image: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/products/banner-coretech.jpg)
+}
+
+.l-banner-tech {
+	height: auto;
+	background-color: #fff
+}
+
+.l-banner-tech h1 {
+	color: #1e1e1e
+}
+
+.l-banner-tech p {
+	color: #535353
+}
+
+.l-content {
+	text-align: center;
+	width: 750px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 50px
+}
+
+.l-banner .l-content {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.l-container {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-width: 960px
+}
+
+.l-container h1 {
+	font-size: 36px;
+	font-weight: 400;
+	color: #1e1e1e;
+	margin-top: 0
+}
+
+.l-container h2 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #404040;
+	margin: auto;
+	text-align: left
+}
+
+.l-container h3 {
+	font-size: 22px;
+	font-weight: 400;
+	color: #535353;
+	margin: auto;
+	text-align: left
+}
+
+.l-container p {
+	overflow: hidden;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 24px;
+	color: #535353;
+	text-align: left;
+	margin: auto
+}
+
+.l-container p .title {
+	float: left;
+	width: 120px;
+	text-align: right;
+	padding-right: 10px
+}
+
+.l-container p .intro {
+	float: left;
+	width: 620px
+}
+
+.l-container a {
+	color: #006d91;
+	text-decoration: none
+}
+
+.l-container strong {
+	font-weight: 700
+}
+
+.l-container form {
+	width: 670px;
+	height: 388px;
+	background-color: #fff;
+	margin: auto;
+	margin-bottom: 80px;
+	padding-top: 58px
+}
+
+.l-container input, .l-container textarea {
+	width: 530px;
+	background-color: #f5f6f6;
+	border: 0;
+	color: #a0a0a0;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 36px;
+	outline: 0;
+	padding: 0 20px;
+	margin-bottom: 44px
+}
+
+.l-container input {
+	height: 36px
+}
+
+.l-container textarea {
+	height: 130px;
+	margin-bottom: 30px;
+	resize: none
+}
+
+.l-container button {
+	width: 160px;
+	height: 40px;
+	background-color: #fa6f6f;
+	font-size: 16px;
+	font-weight: 100;
+	color: #fff;
+	line-height: 40px;
+	border: 0;
+	outline: 0;
+	cursor: pointer
+}
+
+.l-container-about-touch {
+	background-color: #f3f3f3;
+	height: 688px
+}
+
+.l-container-about-touch h1 {
+	margin-bottom: 20px
+}
+
+.l-container-about-touch p {
+	margin-bottom: 20px;
+	text-align: center;
+	width: 430px
+}
+
+.l-container-about-business {
+	background-color: #eaeaea;
+	height: 405px
+}
+
+.l-container-about-business h1 {
+	margin-bottom: 40px
+}
+
+.l-container-about-contact {
+	background-color: #a38383;
+	background-image: url(http://sensetime-website.oss-cn-hangzhou.aliyuncs.com/about-us/map-new.jpg);
+	height: 538px
+}
+
+.l-container-about-contact .l-content {
+	width: 960px
+}
+
+.l-container-about-contact h1 {
+	margin-bottom: 40px
+}
+
+.l-container-about-contact h2 {
+	margin-bottom: 24px
+}
+
+.l-container-about-contact p {
+	text-align: left;
+	margin-bottom: 14px
+}
+
+.l-container-about-contact p img {
+	width: 18px;
+	margin-right: 11px;
+	vertical-align: top
+}
+
+.l-container-about-contact p strong {
+	width: 106px;
+	display: inline-block;
+	margin-right: 6px;
+	border-right: 1px solid #535353;
+	vertical-align: top
+}
+
+.l-container-about-contact p span {
+	width: 700px;
+	display: inline-block
+}
+
+.l-container-about-contact p.e-contact strong {
+	margin-right: 5px;
+	width: auto;
+	border: 0
+}
+
+.l-container-jobs-title {
+	margin: 60px auto
+}
+
+.l-container-jobs-title .l-content, .l-container-jobs-detail .l-content {
+	padding: 0
+}
+
+.l-container-jobs-title h1 {
+	margin: 0 auto 20px auto
+}
+
+.l-container-jobs-title p {
+	text-align: center
+}
+
+.l-container-jobs-detail h2 {
+	margin: 0
+}
+
+.l-container-jobs-detail h2 .subtitle {
+	float: right;
+	font-size: 14px;
+	margin-top: 9px;
+	color: #535353
+}
+
+.l-container-jobs-detail h2 img {
+	height: 16px;
+	margin-left: 3px
+}
+
+.l-container-jobs-detail .sp {
+	width: 100%;
+	height: 5px;
+	background-color: red;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-bottom: 34px
+}
+
+.l-container-jobs-detail .sp div {
+	width: 100%;
+	margin-left: 50px;
+	height: 4px;
+	background-color: #fff;
+	border-bottom: 1px solid #535353
+}
+
+.l-container-jobs-detail .job-content {
+	text-align: left;
+	color: #535353;
+	margin: auto;
+	margin-bottom: 34px;
+	width: 750px
+}
+
+.l-container-jobs-detail .job-content h3 {
+	margin: 0;
+	font-size: 18px;
+	color: #535353;
+	font-weight: 400;
+	line-height: 1.5em
+}
+
+.l-container-jobs-detail .job-content ul {
+	font-size: 18px;
+	list-style: none;
+	font-weight: 100;
+	padding-left: 0;
+	margin: 0;
+	line-height: 1.5em
+}
+
+.l-container-jobs-detail .l-content {
+	width: 960px
+}
+
+.l-container-terms p {
+	margin-bottom: 20px
+}
+
+.l-container-privacy p {
+	margin-bottom: 20px
+}
+
+.l-container-team {
+	background-color: #f2f2f2
+}
+
+.l-container-team .c-panel {
+	height: 300px;
+	background-color: #fff;
+	padding-top: 30px
+}
+
+.l-container-team .c-panel .c-left, .l-container-team .c-panel .c-right {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	height: 260px
+}
+
+.l-container-team .c-panel .c-right {
+	border-left: 1px solid #535353
+}
+
+.l-container-team .c-panel h1 {
+	font-size: 80px;
+	font-weight: 400;
+	color: #535353;
+	margin-bottom: 20px
+}
+
+.l-container-team .c-panel p {
+	font-size: 16px;
+	font-weight: 100;
+	color: #535353;
+	width: 200px;
+	text-align: center
+}
+
+.l-container-product {
+	background-color: #f2f2f2
+}
+
+.l-container-product .l-content {
+	text-align: center;
+	width: 960px
+}
+
+.l-container-product h1 {
+	margin-bottom: 40px
+}
+
+.l-container-product p {
+	margin-bottom: 72px;
+	width: 750px
+}
+
+.l-container-product img.large {
+	width: 480px;
+	height: 480px;
+	margin-top: 98px;
+	margin-bottom: 40px
+}
+
+.l-container-product .c-product-title {
+	margin-bottom: 20px
+}
+
+.l-container-product .c-product-image-box {
+	text-align: justify
+}
+
+.l-container-product .c-product-image {
+	margin: 0 17px 28px 0
+}
+
+.c-product-title .font {
+	font-size: 28px;
+	font-weight: 400
+}
+
+.c-product-title .title {
+	color: #7f301f
+}
+
+.c-product-title .subtitle {
+	color: #404040
+}
+
+.c-product-title .icon {
+	height: 24px;
+	padding: 0 6px;
+	border-radius: 4px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	line-height: 24px;
+	vertical-align: text-top
+}
+
+.c-product-title .sdk {
+	background-color: #f02233;
+	margin-left: 18px;
+	margin-right: 8px
+}
+
+.c-product-title .api {
+	background-color: #515151
+}
+
+.c-product-image { 2
+	width: 300px;
+	height: 236px;
+	display: inline-block
+}
+
+.c-product-image img {
+	width: 298px
+}
+
+.c-product-image p {
+	width: 100%;
+	height: 46px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #7d7d7d;
+	background-color: #fff;
+	line-height: 46px;
+	text-align: center;
+	margin-top: -4px
+}
+
+.l-container-tech {
+	background-color: #f2f2f2
+}
+
+.l-container-tech .l-content {
+	width: 950px;
+	padding: 0 0 130px 0
+}
+
+.c-tech-detail {
+	padding-top: 120px
+}
+
+.c-tech-detail .sp {
+	border-left: 50px solid #e60012;
+	border-right: 0;
+	height: 8px;
+	margin: 10px 0
+}
+
+.c-tech-detail img {
+	width: 440px
+}
+
+.c-tech-detail .tech-detail {
+	vertical-align: top;
+	display: inline-block;
+	width: 440px
+}
+
+.c-tech-detail:nth-child(odd) .tech-detail {
+	margin-left: 60px
+}
+
+.c-tech-detail:nth-child(even) .tech-detail {
+	margin-right: 60px
+}
+
+.c-tech-detail:nth-child(even) .tech-detail h2 {
+	text-align: right
+}
+
+.c-tech-detail:nth-child(even) .tech-detail .sp {
+	border-left: 0;
+	border-right: 50px solid #e60012
+}
+
+.c-tech-detail .tech-detail h2 {
+	font-size: 28px;
+	color: #1e1e1e
+}
+
+.c-tech-detail .tech-detail p {
+	font-size: 16px;
+	line-height: 26px;
+	color: #535353;
+	margin-bottom: 10px
+}
+
+.clearfix:after {
+	content: "";
+	display: "block";
+	clear: "both"
+}
+
+.clearfix {
+	zoom: 1
+}
