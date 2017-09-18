@@ -1,1 +1,0 @@
-keytool -import -v -alias client -file %~dp0\client.p12 -keystore %~dp0\client.keystore -storepass 123456

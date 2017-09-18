@@ -17,9 +17,10 @@ import org.springframework.core.io.ClassPathResource;
 
 import com.tangqiang.web.MyApplication;
 
-//@Configuration
+@Configuration
 public class HttpsConfiguration {
 	private Logger logger = LoggerFactory.getLogger(MyApplication.class);
+
 
 	@Bean
 	public ServletWebServerFactory servletContainer() {
@@ -33,7 +34,7 @@ public class HttpsConfiguration {
 				context.addConstraint(securityConstraint);
 			}
 		};
-		tomcat.addAdditionalTomcatConnectors(createStandardConnector());
+		tomcat.addAdditionalTomcatConnectors(createSslConnector());
 		return tomcat;
 	}
 

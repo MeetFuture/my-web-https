@@ -60,7 +60,7 @@ public class MyWebTest extends TestCase {
 		logger.info("clientStore:" + clientStore.getAbsolutePath() + " ---------------------------");
 		logger.info("serverStore:" + serverStore.getAbsolutePath() + " ---------------------------");
 		SSLContext context = SSLContexts.custom()
-//				.loadKeyMaterial(ksClient, "123456".toCharArray())
+				.loadKeyMaterial(ksClient, "123456".toCharArray())
 				.loadTrustMaterial(ksServer, null).build();
 		socketFactory = new SSLConnectionSocketFactory(context);
 	}
